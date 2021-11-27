@@ -1,0 +1,2 @@
+CREATE DATABASE e_commerce;
+-- GRANT ALL PRIVILEGES ON DATABASE e_commerce TO postgres;

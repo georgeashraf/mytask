@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+
+}
+.form-center {
+	display:flex;
+	justify-content: center;
+}
+.jumbotron-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}  
+.container-sidebar{
+  display: flex;
+  
+}
+.container-content{
+  flex: 4;
+}
+.sidebar{
+  flex: 1;
+  border-style: solid;
+}
+.hidden{
+  display: none;
+}
+.slide-container {
+  width: 70%;
+  margin: auto;
+  height: 400px;
+}
+.img-container{
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.dropdown-submenu{
+  position: relative;
+}
+.dropdown-submenu a::after{
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 3px;
+  top: 40%;
+}
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus .dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute !important;
+  margin-top: -30px;
+  left: 100%;
+}
+@media (max-width: 992px) {
+  .dropdown-menu{
+      width: 50%;
+  }
+  .dropdown-menu .dropdown-submenu{
+      width: auto;
+  }
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+.product-card{
+  margin-right: 20px;
+  width: 20%;
+}
+.side-bar{
+  /* background-color: #bbbec0; */
+  background-color: #C2C5C6;
+  
+}
+.side-bar li a{
+  color: #292b2c;
+}
+.form-style{
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  border-radius: 50px;
+  display: flex;
+  /* height: 200px; */
+  justify-content: center;
+  width: 100%;
+    box-shadow: 
+      12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  
+
+}
+button{
+  padding: 4px;
+}
+.fa-shopping-cart {
+  color: white;
+  margin-top: 15px;
+}
+.welcome {
+  color: white;
+  margin-top: 25px;
+}
+.checkout{
+  bottom: 0;
+  position: fixed;
+  margin-left: 40%;
+}
+/* .nav-bar{
+  background-color: #F9F871;
+  background-color: #66806A; 
+} */

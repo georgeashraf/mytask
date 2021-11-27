@@ -1,0 +1,1 @@
+To run solution just: docker-compose up
