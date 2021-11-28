@@ -71,7 +71,7 @@ const Home = () => {
                           <div className="card-header">{element.name}</div>
                           <div className="card-body">
                             <h4 className="card-title">{element.description}</h4>
-                            <img src={`./files/category-${element.id}.jpeg`} alt="" height="100%" width="100%" />
+                            <img src={`files/category-${element.id}.jpeg`} alt="" height="100%" width="100%" />
                           </div>
                           <button className="button submit btn-md btn-dark" type="submit" onClick={()=>addCategory(element.id)}>
           show more products

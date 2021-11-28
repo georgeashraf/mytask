@@ -7,20 +7,20 @@ const router = express.Router();
 
 const multerStorage = multer.diskStorage({
   destination: (req,file,cb) =>{
-    cb(null,'../app/public');
+    cb(null,'./files/public');
   },
   filename: (req,file,cb) =>{
     const ext = file.mimetype.split('/')[1]
-    cb(null,`files/products-${req.params.id}.${ext}`)
+    cb(null,`products-${req.params.id}.${ext}`)
   }
 });
 const multerStorageCategory = multer.diskStorage({
   destination: (req,file,cb) =>{
-    cb(null,'../app/public');
+    cb(null,'./files/public');
   },
   filename: (req,file,cb) =>{
     const ext = file.mimetype.split('/')[1]
-    cb(null,`files/category-${req.params.id}.${ext}`)
+    cb(null,`category-${req.params.id}.${ext}`)
 
     // cb(null,`files/admin-${file.fieldname}-${req.params.id}--${Date.now()}.${ext}`)
   }

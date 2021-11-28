@@ -87,7 +87,7 @@ const ProductsList = () => {
                                <h5 class="card-title">{element.description}</h5>
                                <h6 class="card-subtitle text-muted">Price: {element.price}</h6>
                              </div>
-                             <img src={`./files/products-${element.id}.jpeg`} alt="" height="50%" width="100%" />
+                             <img src={`files/products-${element.id}.jpeg`} alt="" height="50%" width="100%" />
                              <div class="card-body">
                                <p class="card-text">
                                  {/* {element.Subcategory} */}

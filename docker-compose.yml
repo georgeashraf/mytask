@@ -40,6 +40,7 @@ services:
     volumes:
       - /api/node_modules
       - ./api:/api
+      - ./myvolume:/api/files/public
     ports:
       - "8000:8000"
     depends_on:
@@ -56,6 +57,7 @@ services:
     volumes:
       - /app/node_modules
       - ./app:/app
+      - ./myvolume:/app/public/files
     ports:
       - "3000:3000"
     networks:
@@ -65,3 +67,6 @@ networks:
   app:
   db:
     driver: bridge
+
+volumes:
+  myvolume:
